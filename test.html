@@ -1,0 +1,57 @@
+
+  <html>
+  <head>
+    <title> test.md</title>
+    <link rel="stylesheet" href="vivify.css" />
+  </head>
+  <body>
+<h1>minimal javascript notebook</h1>
+<p>Run your markdown document through <code>vivify-cli</code>. Now your fenced code blocks that start with 'javascript' are runnable in place, notebook style. (This is similar to <a href="https://github.com/JoelOtter/kajero">kajero</a> but simpler, and capable of generating standalone pages.)</p>
+<p>Here's an example:</p>
+<pre><code class="language-javascript; runnable">alert('hello world') 
+</code></pre>
+<p>and another:</p>
+<pre><code class="language-javascript; runnable">2 + 2
+</code></pre>
+<p>arrays just give boring text output:</p>
+<pre><code class="language-javascript; runnable">[0, 1, 2, 3]
+</code></pre>
+<p>This one should only show the result:</p>
+<pre><code class="language-javascript; hidden">(function() { return 'surprise!' })()
+</code></pre>
+<p>This is a fenced code block that doesn't have the javascript type:</p>
+<pre><code class="language-javascript">console.error(&quot;can't touch this&quot;)
+</code></pre>
+<p>This is a regular pre tag:</p>
+<pre><code>Preformatted text.
+</code></pre>
+<h2>Tests of other parts of markdown</h2>
+<h3>H3</h3>
+<ul>
+<li>unordered list
+<ul>
+<li>a</li>
+<li>b</li>
+<li>c</li>
+</ul></li>
+</ul>
+<ol>
+<li>ordered list</li>
+<li>dos</li>
+<li>tres</li>
+</ol>
+<p>“</p>
+<blockquote>
+<p>blockquote<br>
+<em>blockquote</em>  <br>
+<strong>blockquote</strong>  <br>
+<del>blockquote</del></p>
+</blockquote>
+<h4>H4</h4>
+<h5>H5</h5>
+<h6>H6</h6>
+
+    <script src="vivify.js"></script>
+  </body>
+  </html>
+ 
