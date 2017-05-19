@@ -34,3 +34,9 @@ p, pre, blockquote, aside {
 pre, code {
   font-family: 'Source Code Pro', monospace;
 }
+
+blockquote {
+  margin-left: -1em;
+  border-left: 0.25em solid #ddd;
+  padding-left: 0.5em;
+}

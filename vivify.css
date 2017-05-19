@@ -10,7 +10,7 @@ pre code {
   border: 1px solid #eee;
 }
 
-.runButton {
+.runButton, .closeButton {
   font-size: 1.5em;
   cursor: pointer;
   color: #aaa;
@@ -19,7 +19,7 @@ pre code {
   color: #000;
 }
 
-.runButton.button-integrate {
+.runButton.button-integrate, .closeButton.button-integrate {
   float: right;
   padding: 0.5em;
   border: none;
